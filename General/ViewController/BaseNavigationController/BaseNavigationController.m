@@ -28,7 +28,7 @@
     UINavigationBar *navBarAppearance = [UINavigationBar appearanceWhenContainedIn:self, nil];
 #pragma clang diagnostic pop
     [navBarAppearance setShadowImage:[[UIImage alloc] init]];
-    [navBarAppearance setBackgroundImage:[UIImage imageNamed:@"above_background_image"] forBarMetrics:UIBarMetricsDefault];
+//    [navBarAppearance setBackgroundImage:[UIImage imageNamed:@"above_background_image"] forBarMetrics:UIBarMetricsDefault];
     NSDictionary *attrs = @{NSFontAttributeName : [UIFont systemFontOfSize:18], NSForegroundColorAttributeName : [UIColor whiteColor]};
     navBarAppearance.titleTextAttributes = attrs;
     navBarAppearance.tintColor = [UIColor whiteColor];
@@ -59,8 +59,8 @@
     if (self.viewControllers.count) {
         viewController.hidesBottomBarWhenPushed = YES;
         // default back button item
-        UIBarButtonItem *item = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"return_icon"] highLightedImage:nil target:self action:@selector(backItemDidClicked:) forControlEvents:UIControlEventTouchUpInside];
-        viewController.navigationItem.leftBarButtonItem = item;
+//        UIBarButtonItem *item = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"return_icon"] highLightedImage:nil target:self action:@selector(backItemDidClicked:) forControlEvents:UIControlEventTouchUpInside];
+//        viewController.navigationItem.leftBarButtonItem = item;
     }
     self.interactivePopGestureRecognizer.enabled = NO;
     [super pushViewController:viewController animated:animated];
